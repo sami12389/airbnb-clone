@@ -36,7 +36,7 @@ export async function POST(
 
 export async function DELETE(
     request: Request,
-    {params} : {params: Iparams}){
+    {params} : {params: IParams}){
         const currentUser = await getCurrentUser()
         if(!currentUser){
             return NextResponse.error()
